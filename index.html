@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>自動填電話號碼</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h2>請選擇要填入的電話號碼</h2>
+  <input type="tel" id="phoneInput" placeholder="這裡會自動填入電話" />
+  <button onclick="fillPhone('0912345678')">填入：0912345678</button>
+  <button onclick="fillPhone('0987654321')">填入：0987654321</button>
+  <script>
+    function fillPhone(number) {
+      document.getElementById('phoneInput').value = number;
+    }
+  </script>
+</body>
+</html>
